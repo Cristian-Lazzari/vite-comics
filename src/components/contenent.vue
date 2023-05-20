@@ -1,13 +1,18 @@
-<template lang="">
-    <div>
-        
-    </div>
-</template>
 <script>
 export default {
     
 }
 </script>
-<style lang="">
-    
+<template>
+    <div>
+        <span>->Contenent goes here</span>
+        
+    </div>
+</template>
+<style lang="scss" scoped>
+    div{
+        background-color: black;
+        color: white;
+        padding: 3rem;
+    }
 </style>

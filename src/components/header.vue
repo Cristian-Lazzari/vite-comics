@@ -18,13 +18,31 @@ export default {
 </script>
     
 <template>
-    <img src="../assets/img/dc-logo.png" alt="">
-    <ul>
-        <li v-for= "voce in vociMenu">{{ voce }}</li>
-    </ul>
+    <div class="container">
+        <img src="../assets/img/dc-logo.png" alt="">
+        <ul>
+            <li v-for= "voce in vociMenu">{{ voce }}</li>
+        </ul>
+    </div>
  
 </template>
 
-<style lang="sass">
-    
+<style lang="scss" scoped>
+    .container{
+        padding: 1rem;
+        max-width: 990px;
+        margin-inline: auto;
+        background-color: white;
+        color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1em;
+        ul{
+            display: flex;
+            gap: 1em;
+            
+        }
+
+    }
 </style>
