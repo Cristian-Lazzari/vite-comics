@@ -102,46 +102,68 @@ export default {
 
     .top-foot{
         background-color: $bg-tf ;
-        padding: 2rem;
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        color: white;
-        .features-ft{
+        position: relative;
+        z-index: 2;
+
+        .max-w{
+            max-width: 900px;
+            margin-inline: auto;
+            padding: 2rem;
             display: flex;
             justify-content: center;
-            align-items: center;
-            gap: .5em;
-            span{
-                white-space: nowrap;
-            }
-            img{
-                height: 45px;
-                max-width: 45px;
+            gap: 1rem;
+            color: white;
+            .features-ft{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: .5em;
+                span{
+                    white-space: nowrap;
+                }
+                img{
+                    height: 45px;
+                    max-width: 45px;
+                }
             }
         }
     }
     .main-foot{
         color: white;
         background-image: url('../assets/img/footer-bg.jpg');
-        padding: 3rem;
-        
-        position: relative;
-        img{
-            max-width: 45%;
-            position: absolute;
-            top: -25%;
-            right: 0;
-        }
-        .sub-cont{
-            display: flex;
-            gap: 1rem;
-            ul{
-                display: flex;
-                flex-direction: column;
-                gap: .3em;
-                margin-bottom: .3em;
+        .max-w{
+            padding: 3rem;
+            max-width: 900px;
+            margin-inline: auto;
+            
+            position: relative;
+            img{
+                max-height: 140%;
+                position: absolute;
+                top: -25%;
+                right: 0;
+                z-index: 1;
+                
+               
             }
+            .sub-cont{
+                display: flex;
+                gap: 1rem;
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    gap: .3em;
+                    margin-bottom: 1em;
+                    color: grey;
+                }
+                ul li:first-child{
+                    color: white;
+                    font-weight: bold;
+                    font-size: large;
+                    margin-bottom: 0.5em;
+                }
+            }
+
         }
     }
     .bottom-foot{
@@ -149,5 +171,6 @@ export default {
         height: 70px;
         position: relative;
         top: 0;
+        z-index: 2;
     }
 </style>

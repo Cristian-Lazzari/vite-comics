@@ -28,8 +28,10 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+
     .container{
-        padding: 1rem;
+        padding: 2rem;
+        margin: .1rem;
         max-width: 990px;
         margin-inline: auto;
         background-color: white;
@@ -43,6 +45,8 @@ export default {
             gap: 1em;
             
         }
-
+        img{
+            height: 50px;
+        }
     }
 </style>
